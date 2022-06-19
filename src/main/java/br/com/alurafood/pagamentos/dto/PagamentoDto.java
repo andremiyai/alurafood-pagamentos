@@ -4,6 +4,7 @@ import br.com.alurafood.pagamentos.model.Status;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Data
 public class PagamentoDto {
@@ -17,4 +18,5 @@ public class PagamentoDto {
     private Status status;
     private Long pedidoId;
     private Long formaDePagamentoId;
+    private List<ItemDoPedidoDto> itens;
 }
